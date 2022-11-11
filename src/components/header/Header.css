@@ -1,0 +1,14 @@
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/1667365637851.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(18, 18, 18, 0.3);
+    position: relative;
+}

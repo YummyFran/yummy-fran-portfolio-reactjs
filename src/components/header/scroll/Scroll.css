@@ -1,0 +1,67 @@
+@keyframes arrow {
+    from {
+        transform: translateY(-10%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+.scroll-down {
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.scroll-down:hover {
+    background-color: var(--accent);
+}
+
+.scroll-down:hover .arrow {
+    animation: arrow 0.6s infinite alternate;
+}
+
+.scroll-down:hover .arrow, 
+.scroll-down:hover .arrow::before,
+.scroll-down:hover .arrow::after {
+    background-color: var(--black);
+}
+
+.arrow, .arrow::before, .arrow::after {
+    transition: 0.3s;
+}
+
+.arrow {
+    width: 2px;
+    height: 55%;
+    background-color: var(--accent);
+}
+
+.arrow::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50%;
+    background-color: var(--accent);
+    transform-origin: bottom left;
+    transform: translateY(100%) rotate(-45deg);
+}
+
+.arrow::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50%;
+    background-color: var(--accent);
+    transform-origin: bottom right  ;
+    transform: rotate(45deg);
+}

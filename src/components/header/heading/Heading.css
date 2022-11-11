@@ -1,0 +1,68 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.heading p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.heading p span {
+    font-weight: 700;
+}
+
+.heading h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-top: -10px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.buttons * {
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.buttons a {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a:hover {
+    background-color: var(--accent);
+    color: var(--black);
+    border: 1px solid var(--accent);
+}
+
+.buttons button {
+    color: var(--black);
+    background-color: var(--accent);
+    border: none;
+}
+
+.buttons button:hover {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent)
+}

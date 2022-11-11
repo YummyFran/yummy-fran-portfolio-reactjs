@@ -1,0 +1,18 @@
+.socials {
+    display: flex;
+    gap: 50px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}
+
+.socials * {
+    filter: invert(88%) sepia(9%) saturate(1645%) hue-rotate(329deg) brightness(106%) contrast(105%);
+    transition: 0.3s;
+}
+
+.socials *:hover {
+    filter: invert(91%) sepia(4%) saturate(3081%) hue-rotate(345deg) brightness(85%) contrast(87%);
+}
